@@ -1,0 +1,19 @@
+[gd_scene load_steps=3 format=3 uid="uid://b0ghnqmwkrgwf"]
+
+[ext_resource type="Texture2D" uid="uid://bny6wdggipje6" path="res://rzyeczy/sprites/world_tileset.png" id="1_t240s"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_lnvtt"]
+size = Vector2(8, 8)
+
+[node name="skrzynka" type="StaticBody2D"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_lnvtt")
+one_way_collision = true
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(-2.98023e-08, 0)
+scale = Vector2(0.5625, 0.55)
+texture = ExtResource("1_t240s")
+region_enabled = true
+region_rect = Rect2(111.632, 47.603, 16.5109, 16.5109)
